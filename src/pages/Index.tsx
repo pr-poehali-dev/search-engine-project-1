@@ -1,7 +1,6 @@
 import { useState } from "react";
 import SearchLogo from "@/components/SearchLogo";
 import SearchBar from "@/components/SearchBar";
-import QuickActions from "@/components/QuickActions";
 import SettingsModal from "@/components/SettingsModal";
 
 const Index = () => {
@@ -27,7 +26,6 @@ const Index = () => {
             onSearch={handleSearch}
             onSettingsToggle={handleSettingsToggle}
           />
-          <QuickActions />
         </div>
       </div>
 

@@ -43,7 +43,7 @@ const SearchBar = ({ onSearch, onSettingsToggle }: SearchBarProps) => {
               value={query}
               onChange={handleInputChange}
               placeholder="Найти всё, везде, на любом языке..."
-              className="w-full px-4 py-4 bg-transparent text-white placeholder-search-gray focus:outline-none text-lg"
+              className="w-full px-4 py-4 bg-transparent text-gray-200 placeholder-search-gray focus:outline-none text-lg"
               autoComplete="off"
               spellCheck="false"
             />
@@ -51,7 +51,7 @@ const SearchBar = ({ onSearch, onSettingsToggle }: SearchBarProps) => {
               <button
                 type="button"
                 onClick={() => setQuery("")}
-                className="mr-2 p-2 text-search-gray hover:text-white transition-colors"
+                className="mr-2 p-2 text-search-gray hover:text-gray-200 transition-colors"
               >
                 <Icon name="X" size={16} />
               </button>
@@ -61,13 +61,13 @@ const SearchBar = ({ onSearch, onSettingsToggle }: SearchBarProps) => {
               className="mr-4 p-2 bg-search-red hover:bg-search-red-light rounded-md transition-colors"
               disabled={!query.trim()}
             >
-              <Icon name="ArrowRight" className="text-white" size={16} />
+              <Icon name="ArrowRight" className="text-gray-200" size={16} />
             </button>
           </div>
         </div>
       </form>
 
-      <div className="mt-4 text-center text-sm text-search-gray">
+      <div className="mt-4 text-center text-sm text-search-gray hidden">
         <span>Поиск без границ и цензуры • </span>
         <span className="text-search-red">
           Введите "/settings" для настроек

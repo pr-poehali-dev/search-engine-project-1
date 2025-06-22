@@ -19,7 +19,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        roboto: ["Roboto", "sans-serif"],
+        furore: ["Furore", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
